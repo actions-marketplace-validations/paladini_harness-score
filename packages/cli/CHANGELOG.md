@@ -1,5 +1,26 @@
 # harness-score
 
+## 1.6.5
+
+### Patch Changes
+
+- c1f6b16: Skip `.devbox/` during scans. Devbox provisions this directory with binary
+  symlinks (e.g. `.devbox/bin/devbox`) that resolve outside the repo root,
+  which previously made the whole scan report incomplete via
+  `outside-root-symlink`.
+
+  Thanks to [@PAHJunior](https://github.com/PAHJunior) for contributing this
+  fix.
+
+## 1.6.4
+
+### Patch Changes
+
+- Synchronize the compact check catalog with the implemented Harness Score weights in English,
+  Portuguese, Spanish, Simplified Chinese, and Hindi. Documentation tests now protect check
+  weights, complete table rows, dimension totals, detailed catalog headings, overall totals,
+  and maturity thresholds across all five locales.
+
 ## 1.6.3
 
 ### Patch Changes
